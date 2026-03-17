@@ -284,9 +284,9 @@ const Patients = () => {
                   <th className="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                     Insurance Provider
                   </th>
-                  <th className="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                  {/* <th className="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                     UM Vendor
-                  </th>
+                  </th> */}
                   <th className="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                     Member ID
                   </th>
@@ -326,9 +326,9 @@ const Patients = () => {
                         </div>
                       )}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    {/* <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       {patient.payerId?.umVendor || 'N/A'}
-                    </td>
+                    </td> */}
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 font-mono">
                       {patient.memberId}
                     </td>
@@ -412,12 +412,12 @@ const Patients = () => {
                               <span className="text-gray-500">Payer:</span>{' '}
                               <span className="font-medium">{auth.payerName}</span>
                             </div>
-                            {auth.umVendor && (
+                            {/* {auth.umVendor && (
                               <div>
                                 <span className="text-gray-500">UM Vendor:</span>{' '}
                                 <span className="font-medium">{auth.umVendor}</span>
                               </div>
-                            )}
+                            )} */}
                             <div>
                               <span className="text-gray-500">Created:</span>{' '}
                               <span className="font-medium">{formatDate(auth.createdAt)}</span>
